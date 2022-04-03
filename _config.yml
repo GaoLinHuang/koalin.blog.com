@@ -1,0 +1,54 @@
+title: ".NET"
+description: .NET 开发爱好者
+author: ".NET"
+post_author: ".NET"
+logo: /static/img/avatar.png
+github: https://github.com/easiwin
+about: koalin
+mail: 1037000546@qq.com
+
+baseurl: ""
+url: "https://koalin.blog.com/"
+
+allowsearch: true
+
+analytics:
+  google: UA-108101550-1
+disqus:
+  name: huanggaolin
+
+share:
+  twitter_username: 
+
+
+enableTags: true
+tagarray: []
+
+excerpt_separator: "<!--more-->"
+paginate: 15
+per_page: 15
+paginate_path: "/blog/page:num/"
+markdown: kramdown
+gems: [jekyll-paginate, jekyll-gist]
+
+# Content Collection
+collections:
+  articles:
+    output: true
+
+# Content Template
+defaults:
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
+      author: ""
+      permalink: "/post/:title.html"
+  - scope:
+      path: "_articles"
+      type: "articles"
+    values:
+      layout: "post"
+      author: ""
+      permalink: "/article/:title.html"
